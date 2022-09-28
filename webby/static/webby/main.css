@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+body{
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+   
+}
+
+
+.navbar-logo{
+    font-weight: bold;
+    font-size: x-large;
+    color:  white;
+    text-decoration: none;
+    margin-left: 10px;
+    pointer-events: none;
+}
+
+.login-item{
+    font-size: medium;
+    font-weight: bold;
+    color:  rgb(42, 111, 207) ;
+    border: 2px solid white;
+    padding: 2px 30px;
+    background: white;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.login-item:hover{
+    color:  rgb(42, 111, 207) ;
+    text-decoration: none;
+    opacity: 0.8;
+    
+
+}
+
+
+.sign-item{
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: 2px solid white;
+    padding: 2px 30px;
+    background: rgb(42, 111, 207) ;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.sign-item:hover{
+    color:  white;
+    opacity: 0.8;
+    text-decoration: none;
+   
+
+}
+.about-text{
+    font-weight: bold;
+}
+
+.home-text{
+    margin-left: -2em;
+    font-size: medium;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.home-text:hover{
+    opacity: 0.9;
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    border-bottom: 1px solid rgb(231, 226, 226);
+}
+
+.bg-color{
+    background: rgb(42, 111, 207);
+}
+.navbar-nav{
+    margin-right: 30px;
+    
+}
+.nav-item{
+    font-weight: bolder;
+    font-size: medium;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.nav-item:hover{
+    color: white;
+    text-decoration: underline;
+}
+img{
+    width: 30px;
+}
+
+.display-content2{
+    margin-top: 3.9em;
+}
+
+.display-content{
+    margin-top: 1em ;
+    margin-bottom:1em;
+    margin-left:3em ;
+    margin-right: 40em;
+    border: 1px solid rgb(229, 228, 228);
+    border-radius: 5px;
+    padding: 1em 2em;
+    background: rgb(255, 255, 255);
+}
+
+.content-post{
+    padding-bottom: 2em;
+    border-bottom:1px solid rgb(217, 217, 217) ;
+}
+.content-title{
+    border-top: 1px solid  rgb(235, 229, 229);
+    font-size: medium;
+    color: black;
+    display: block;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.content-title:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.content-author{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    font-weight: bold;
+
+}
+.content-author:hover{
+    text-decoration: none;
+}
+
+.time{
+    font-size:x-small;
+    font-weight: bold;
+}
+.section2{
+   width: 35%;
+   float: right;
+   margin-right: 20px;
+   margin-top: 52px;
+}
+
+.form-content{
+    width: 30%;
+
+}
+
+.message{
+    margin: 1em 5em;
+}
+.login-text{
+    font-size: small;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 3em;
+}
+
+.account-btn{
+    margin-right: .8em;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: 2px solid white;
+    padding: 2px 30px;
+    background: rgb(42, 111, 207) ;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.account-btn:hover{
+    text-decoration: none;
+    color: white;
+    opacity:0.8;
+}
+.profile-pic{
+    width: 80px;
+    height: 80px;
+   
+}
+.profile-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.article-pic{
+    width: 40px;
+    height: 40px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+.about-img{
+    width: 100px;
+    height: 100px;
+}
+
+.create-text{
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.create-text:hover{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.delete-btn{
+    margin-top: -1em;
+   
+   
+}
+
+.detail-btn{
+    margin-top: -3em;
+    float: right;
+}
+
+.page-num{
+    margin-left: 3.2em;
+}
+
+.display-content3{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.about-title{
+    font-weight: bold;
+}

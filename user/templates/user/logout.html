@@ -1,0 +1,12 @@
+{% extends "webby/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content  %}
+    <div class="display-content mt-5">
+          <h4 > 👨‍🚀 You've Been Logged Out. </h4> 
+          <a class="login-text" href="{% url 'login' %}">Login</a>
+    </div>
+   
+
+{% endblock content %}

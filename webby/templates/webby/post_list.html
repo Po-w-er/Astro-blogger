@@ -1,0 +1,46 @@
+{% extends "webby/base.html" %}
+{% block content %}
+    <div class="display-content2">
+
+        {% for post in posts %}
+        <div class="display-content" >
+            <p class="time">Posted {{post.date_posted}}</p>
+            <div class="mb-2">
+                <img class="rounded-circle article-pic" src="{{post.author.profile.image.url}}" alt="">
+                <a class="content-author" href="{% url 'user-posts' post.author.username %}">{{post.author}}</a>
+            </div>
+            
+           
+            <a href="{%  url 'post-detail' post.id %}" class="content-title" >{{post.title}}</a>
+            <p class="content-post"> {{post.content}} </p>
+        </div>
+        
+        {% endfor %}
+    </div>
+
+
+<div class="page-num">
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a class='btn btn-outline-primary mb-4' href="?page=1">First</a>
+            <a class='btn btn-outline-primary mb-4' href="?page={{page_obj.previous_page_number}}">Previous</a>
+        {% endif %}
+
+        {%for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                    <a class='btn btn-primary mb-4' href="?page={{num}}">{{ num }}</a>
+
+                {% elif num > page_obj.number|add:'-3' and num > page_obj.number|add:'3' %}
+                <a class='btn btn-outline-primary mb-4' href="?page={{num}}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a class='btn btn-outline-primary mb-4' href="?page={{page_obj.next_page_number}}">Next</a>
+            <a class='btn btn-outline-primary mb-4' href="?page={{page_obj.paginator.num_pages}}">Last</a>
+        {% endif %}
+
+    {% endif %} 
+</div>
+
+{% endblock content %}

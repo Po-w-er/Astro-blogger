@@ -1,0 +1,33 @@
+{% extends "webby/base.html" %}
+{% block content %}
+    
+
+        
+        
+            <div class="about-content mt-5 ml-5 mb-5">
+                <div><img class=" rounded-circle about-img" src="{{user.profile.image.url}}" alt=""></div>
+                <div> <h6 class="about-text"> My bio </h6>
+                <h6>all you need to know about {{user.username}} is down below ☄ </h6>
+                <h6>Feel free to look around dear traveler. 🏂</h6>
+            </div>
+        
+
+            </div>
+        
+            {% for post in posts %}
+                
+                        {% if post.author == user %}
+                        <div class="display-content">
+                            <p class="about-title">{{post.title}}</p>
+                            <p>{{post.content}}</p>
+                        </div>
+                        {% endif %}
+            {% endfor %}
+                    
+                    
+           
+        
+        
+        
+   
+{% endblock content %}

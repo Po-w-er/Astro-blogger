@@ -1,0 +1,25 @@
+{% extends "webby/base.html" %}
+{% block content %}
+    <div class="display-content2">
+        <div class="display-content" >
+            <p class="time">Posted {{object.date_posted}}</p>
+            <div class="mb-2">
+                <img class="rounded-circle article-pic" src="{{object.author.profile.image.url}}" alt="">
+                <a class="content-author" href="{% url 'user-posts' object.author.username %}">{{object.author}}</a>
+            </div>
+             <h3 class="content-title" >{{object.title}}</h3>
+             <p class="content-post mb-5"> {{object.content}} </p>
+            {% if object.author == user %}
+            <div class="detail-btn ">
+                <a type="submit" href="{%url 'update-post' object.id %}" class="btn btn-outline-info">Update</a>
+                <a href="{%url 'delete-post' object.id %}" type="submit" class="btn btn-outline-danger">Delete</a>
+            </div>
+            {% else %}
+            {% endif %}
+        </div>
+
+        
+        
+    </div>
+        
+{% endblock content %}

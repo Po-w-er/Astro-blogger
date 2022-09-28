@@ -1,0 +1,21 @@
+{% extends "webby/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content  %}
+    <div class="display-content mt-5">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group mb-3">
+               <p>Are you sure you want to delete this post?</p>
+            </fieldset>
+            <div class="delete-btn">
+                <a type="submit" href="{% url 'post-detail' object.id  %}" class="btn btn-outline-secondary">Cancel</a>
+                <button type="submit" class="btn btn-outline-danger">Delete</button>
+            </div>
+            
+        </form>
+    </div>
+   
+
+{% endblock content %}
